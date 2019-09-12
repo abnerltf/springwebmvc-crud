@@ -48,4 +48,10 @@ public class AuthService
 			return false;
 		}
 	}
+
+	public boolean isAuthenticated(HttpServletRequest request)
+	{
+		HttpSession session = request.getSession();
+		return ( (session.getAttribute("authenticated") == null) ? false : true );
+	}
 }

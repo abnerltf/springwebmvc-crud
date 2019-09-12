@@ -1,0 +1,5 @@
+io/github/abnerltf/springcrud/controllers/LoginController.class
+io/github/abnerltf/springcrud/services/AuthService.class
+io/github/abnerltf/springcrud/controllers/ErrorController.class
+io/github/abnerltf/springcrud/controllers/HomeController.class
+io/github/abnerltf/springcrud/interceptors/AuthInterceptor.class

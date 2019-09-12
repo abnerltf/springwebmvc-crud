@@ -23,5 +23,11 @@
 		</property>
 	</bean>
 	<mvc:resources mapping="/css/**" location="/resources/css/" />
-	<bean class = "org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
+
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/home" />
+			<bean class="io.github.abnerltf.springcrud.interceptors.AuthInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
 </beans>
